@@ -1,8 +1,9 @@
 package org.edu.epo.metier;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Livraison {
+public class Livraison implements Serializable {
     private int numLivraison;
     private Date date;
     private Livreur livreur;

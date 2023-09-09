@@ -2,7 +2,7 @@ package org.edu.epo.metier;
 
 import java.io.Serializable;
 
-public class Adresse  implements Serializable {
+public class Adresse implements Serializable {
     private int numAddress;
     private String ville;
     private String secteur;

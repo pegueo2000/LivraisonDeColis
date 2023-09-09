@@ -2,7 +2,7 @@ package org.edu.epo.metier;
 
 import java.io.Serializable;
 
-public class Livreur implements Serializable {
+public class Livreur implements Serializable{
     private int numLivreur;
     private String nom;
     private String prenom;
