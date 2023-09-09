@@ -6,6 +6,7 @@ import java.math.BigInteger;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class MesFonctionsImpl implements mesFonctions{
     @Override
@@ -42,8 +43,6 @@ public class MesFonctionsImpl implements mesFonctions{
 
     @Override
     public int mesId() {
-        String generateUUIDNo = String.format("%010d",new BigInteger(UUID.randomUUID().toString().replace("-",""),16));
-        String unique_no = generateUUIDNo.substring( generateUUIDNo.length() - 10);
-        return Integer.parseInt(unique_no);
+return ThreadLocalRandom.current().nextInt();
     }
 }
