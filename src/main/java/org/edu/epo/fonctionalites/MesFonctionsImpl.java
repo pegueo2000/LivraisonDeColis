@@ -36,7 +36,7 @@ public class MesFonctionsImpl implements mesFonctions{
         double total =0;
         for (Produit p: produits)
         {
-          total+=p.getPrixProduit();
+          total+=p.getPrixProduit()*p.getQuantite();
         }
         return total;
     }
