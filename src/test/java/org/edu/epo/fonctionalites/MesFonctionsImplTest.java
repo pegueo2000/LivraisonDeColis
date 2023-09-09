@@ -44,7 +44,7 @@ class MesFonctionsImplTest {
         Produit p2 = new Produit(mes.mesId(),"academi",500,25);
         List<Produit> produits = new ArrayList<>();
         produits.add(p1);
-        produits.add(p1);
+        produits.add(p2);
         Assertions.assertEquals(16875,mes.totalPrixProduits(produits));
 
     }
