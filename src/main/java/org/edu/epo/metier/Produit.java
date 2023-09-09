@@ -11,6 +11,13 @@ public class Produit implements Serializable {
     public Produit() {
     }
 
+    public Produit(int refProduit, String nomProduit, double prixProduit, int quantite) {
+        this.refProduit = refProduit;
+        this.nomProduit = nomProduit;
+        this.prixProduit = prixProduit;
+        this.quantite = quantite;
+    }
+
     public Produit(String nomProduit, double prixProduit) {
         this.nomProduit = nomProduit;
         this.prixProduit = prixProduit;
